@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <title>Charts and Cats</title>
+
+    <style>
+        .footer {margin-top: 80px;}
+        h1 {margin-top: 5px;}
+        .post-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .underline {
+            border-bottom: 2px solid; /* сплошное (solid) нижнее подчеркивание шириной в 2 пикселя */
+        }
+        .underline--blue {
+            border-bottom-color: #7b8197; /* подчеркивание синим цветом */
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Cats</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nnavbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="nnavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Top
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/charts">Charts</a>
+                    <a class="dropdown-item" href="/python">Python</a>
+                    <a class="dropdown-item" href="/javascript">Javascript</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/">All</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main role="main" class="container">
+    <div><h1 class="text-center">Библиотека пород кошек</h1>
+        <br>
+        <p class="text-center">Готовы взять домой кошку, но не уверены, какая порода лучше всего подходит вам и вашей
+            семье? С помощью нашей библиотеки вы сможете разобраться, чем отличаются разные породы кошек, и решить,
+            какая порода вам больше подходить. Вы узнаете об истории появления каждой породы, особенностях характера
+            их представителей, а также особых пищевых потребностях кошек той или иной породы.
+        </p>
+    </div>
+    <div> <h3>2. По типу шёрстного покрова:</h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat1.jpg", height="300">
+                    <p class = "text-center" class="text-break"><strong>Новрежская Лесная</strong></p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat2.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break"><strong>Манчкин</strong></p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat3.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break"><strong>Мэнкс</strong></p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat4.jpg", height="300">
+                    <br>
+                    <p class = "text-center" class="text-break">
+                        <strong>Мэйн-Кун</strong>
+                    </p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat5.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break"><strong>Лаперм</strong></p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat6.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break">
+                        <strong>Корат</strong>
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat7.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break">
+                        <strong>Као-мани</strong>
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail" src="image/cat8.jpg", height="300">
+                    <br> <br>
+                    <p class = "text-center" class="text-break">
+                        <strong>Японский бобтэйл короткошерстный</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<div class="footer"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+
+</body>
+</html>
